@@ -43,15 +43,25 @@ author@suiyuxuan
 
 >**def parse_info**:定义解析函数，主要用来解析我们需要爬取网址的字段，并存入items之前定义好的字段中，通常会用到正则表达式的方法进行网页字段提取。
 
->**name**:定义爬虫名字,name='ajk'
+>**name**:定义爬虫名字
 
->**allowed_domains**:定义要爬取的域名范围,allowed_domains='anjuke.com'
+    name='ajk'
 
->**start_urls**:定义初始爬取的网址，start_urls=['https://xa.anjuke.com/sale/xianzhoubianc/']
+>**allowed_domains**:定义要爬取的域名范围
+    
+    allowed_domains='anjuke.com'
 
->**headers**:请求头文件，用来模拟浏览行为，headers={'User-Agent':"'Mozilla/5.0'"}
+>**start_urls**:定义初始爬取的网址
+    
+    start_urls=['https://xa.anjuke.com/sale/xianzhoubianc/']
 
->**item**: 获取在items.py中定义的数据字段，item=AjkItem()
+>**headers**:请求头文件，用来模拟浏览行为
+
+    headers={'User-Agent':"'Mozilla/5.0'"}
+
+>**item**: 获取在items.py中定义的数据字段
+    
+    item=AjkItem()
 
 >**xpath**：提取字段的一种方法
 
