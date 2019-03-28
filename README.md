@@ -3,6 +3,17 @@ HousePrice crawler of Xi'An
 
 author@suiyuxuan
 
+## **项目依赖库**
+> scrapy
+
+> json
+
+> re
+
+## **创建scrapy项目**
+
+    scrapy startproject projectname
+
 ##**项目结构**
 #####crawler_ajk
 >**spider/**
