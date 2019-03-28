@@ -61,6 +61,20 @@ author@suiyuxuan
 ### items.py
 爬虫项目的数据容器文件，主要用来定义我们要获取的数据
 items.py 中定义了储存数据的字段名，在编辑此文件前需先分析要提取那些信息，定义好名称即可。
+例如：
+
+    class AjkItem(scrapy.Item):
+        # define the fields for your item here like:
+        name = scrapy.Field()
+        structure = scrapy.Field()
+        area = scrapy.Field()
+        rise = scrapy.Field()
+        year = scrapy.Field()
+        price = scrapy.Field()
+        unit_price = scrapy.Field()
+        address = scrapy.Field()
+        owner = scrapy.Field()
+        pass
 
 ### middlewares.py
 中间件，创建项目时自动生成
@@ -71,3 +85,5 @@ items.py 中定义了储存数据的字段名，在编辑此文件前需先分�
 
 ### settings.py
 爬虫项目的设置文件，主要为爬虫项目的一些设置信息。如爬取间隔，请求时间，中文获取等。
+
+参考：https://docs.scrapy.org/en/latest/
